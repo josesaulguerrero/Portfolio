@@ -2,9 +2,12 @@
 //assets
 //components
 import { Header } from "./Header";
-import { Hero } from "./Hero";
 import { Logo } from './Logo';
 import { Navbar } from "./Navbar";
+import { Hero } from "./Hero";
+import { About } from './About';
+import { Projects } from './Projects';
+import { Contact } from './Contact';
 
 export const App = () => {
   return (
@@ -13,7 +16,10 @@ export const App = () => {
         <Logo />
         <Navbar />
       </Header>
-      <Hero></Hero>
+      <Hero />
+      <About />
+      <Projects />
+      <Contact />
     </div>
   );
 };
