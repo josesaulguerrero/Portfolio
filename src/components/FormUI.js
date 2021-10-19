@@ -1,47 +1,10 @@
 //libraries and hooks
-import { useState } from "react";
-import { init, send } from 'emailjs-com';
-
 //assets
 //components
 import { Button } from "./Button";
 
-export const Form = () => {
-   init("user_YwtetwnsXeNTtKH3K4p2N");
-   const User_ID = 'user_YwtetwnsXeNTtKH3K4p2N';
-   // const Access_Token = 'e358cfd08e6caad7bc0bcfdf86fa245b';
-   const template_ID = 'template_43q0nkj';
-   const service_ID = 'service_1v3cfzt';
-   const [formData, setFormData] = useState({
-      name: '',
-      email: '',
-      message: '',
-   });
-   const params = {
-      ...formData
-   };
-   const { name, email, message } = formData;
-   const onChange = (event) => {
-      const { name, value } = event.target;
-      setFormData({
-         ...formData,
-         [name]: value,
-      });
-   };
-   const onSubmit = (event) => {
-      event.preventDefault();
-      send(
-         service_ID,
-         template_ID,
-         params,
-         User_ID
-      ).then(console.log);
-      setFormData({
-         name: '',
-         email: '',
-         message: '',
-      });
-   };
+export const FormUI = ({ onChange, onSubmit, status, formData: { name, email, message } }) => {
+   console.log(status);
    return (
       <form className="Form" onSubmit={onSubmit}>
          <label htmlFor='name' className='input'>

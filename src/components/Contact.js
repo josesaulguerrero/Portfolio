@@ -2,7 +2,8 @@
 //assets
 //components
 import { SocialMedia } from "./SocialMedia";
-import { Form } from './Form';
+import { FormUI } from './FormUI';
+import { FormHOC } from "./FormHOC";
 
 export const Contact = () => {
    return (
@@ -13,7 +14,7 @@ export const Contact = () => {
          </p>
          <SocialMedia />
          <p>Or send me an email!</p>
-         <Form />
+         <FormHOC Component={FormUI} />
       </section>
    );
 };
