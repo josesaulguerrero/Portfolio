@@ -7,10 +7,10 @@ import { Menu } from './Menu';
 
 export const Navbar = () => {
    return (
-      <navbar className="Navbar">
+      <nav className="Navbar">
          <ThemeSwitch />
          <MenuIcon />
          <Menu />
-      </navbar>
+      </nav>
    );
 };
