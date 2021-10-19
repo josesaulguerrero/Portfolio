@@ -2,8 +2,11 @@
 //components
 //assets
 
-export const Button = ({ size, children }) => {
+export const Button = ({ size, disabled = false, children }) => {
    return (
-      <button className={size}>{children}</button>
+      <button
+         className={size}
+         disabled={disabled}
+      >{children}</button>
    );
 };
