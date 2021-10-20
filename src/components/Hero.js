@@ -2,6 +2,7 @@
 //components
 import { Button } from './Button';
 //assets
+import '../assets/styles/Hero.css';
 
 export const Hero = () => {
    return (
@@ -11,7 +12,7 @@ export const Hero = () => {
          <p className="text--large">
             I'm a web developer who builds friendly user interfaces using HTML, CSS, JavaScript, and React, following some good practices like reusable, clean, and readable code, which leads to accessible, fast and smooth experiences.
          </p>
-         <Button>View work</Button>
+         <Button size='medium'>View work</Button>
       </main>
    );
 };

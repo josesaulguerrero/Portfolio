@@ -1,0 +1,6 @@
+.Hero {
+	width: 100%;
+	height: calc(
+		100vh - 70px
+	); /* I want the Hero component to fill all the viewport height, but the header is already taking 70px, so I use the calc() function to take those 70px from the viewport height */
+}
