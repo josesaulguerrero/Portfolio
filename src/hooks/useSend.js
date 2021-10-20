@@ -2,18 +2,19 @@ import { useState } from "react";
 import { init, send } from 'emailjs-com';
 
 export const useSend = () => {
-   const [status, setStatus] = useState('inital');
-   const sendParams = {
+   const [status, setStatus] = useState('initial');
+   const Params = {
       userID: 'user_YwtetwnsXeNTtKH3K4p2N',
       templateID: 'template_43q0nkj',
       serviceID: 'service_1v3cfzt',
    };
 
    const sendData = (data) => {
-      //we init our library
-      init(sendParams.userID);
       //the information is being sent, so we set the status to 'loading'
       setStatus('loading');
+
+      //we init our library with our user ID
+      init(Params.userID);
       /*
       send is a method, from emailjs, which receives four parameters:
          1 -> our vinculated service's ID
@@ -22,10 +23,10 @@ export const useSend = () => {
          4 -> and finally, our user ID
       */
       send(
-         sendParams.serviceID,
-         sendParams.templateID,
+         Params.serviceID,
+         Params.templateID,
          data,
-         sendParams.userID
+         Params.userID
       )
          .then(res => setStatus('sent')) //if the information is sent correctly, we set the status to 'sent'
          .catch(err => setStatus('error')) // otherwise we set the status to 'error'

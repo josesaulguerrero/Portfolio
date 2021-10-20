@@ -6,7 +6,7 @@ import { useSend } from '../hooks/useSend';
 
 export const FormHOC = ({ Component }) => {
    //useForm handles the changes in the input fields
-   const [formData, setFormData, resetForm] = useForm({
+   const [formData, updateForm, resetForm] = useForm({
       name: '',
       email: '',
       message: '',
@@ -14,11 +14,12 @@ export const FormHOC = ({ Component }) => {
 
    //whereas useSend sends the form information when the submit button is clicked. status allows us to find out whether the form data was succesfully sent or not.
    const [status, sendData] = useSend();
+
    const onChange = (event) => {
       // we get the input's name and value from event.target
       const { name, value } = event.target;
       //and we update the form status.
-      setFormData(name, value);
+      updateForm(name, value);
    };
    const onSubmit = (event) => {
       //we prevent the page from re-loading

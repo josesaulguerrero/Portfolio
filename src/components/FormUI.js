@@ -2,6 +2,7 @@
 //assets
 //components
 import { Button } from "./Button";
+import { Loader } from "./Loader";
 
 export const FormUI = ({ onChange, onSubmit, status, formData: { name, email, message } }) => {
    console.log(status);
@@ -44,7 +45,11 @@ export const FormUI = ({ onChange, onSubmit, status, formData: { name, email, me
                required
             ></textarea>
          </label>
-         <Button size='large'>Send it!</Button>
+         <Button size='large'>
+            {status === 'initial' && 'Send it!'}
+            {status === 'loading' && <Loader />}
+            {status === 'sent' && 'sent'}
+         </Button>
       </form>
    );
 };

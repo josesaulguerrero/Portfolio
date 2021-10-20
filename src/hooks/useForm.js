@@ -5,7 +5,7 @@ export const useForm = (formFields) => {
    const [formData, setFormData] = useState(formFields);
 
    //this function receives a key and a value that help us update our form status.
-   const changeFormData = (key, value) => {
+   const updateForm = (key, value) => {
       setFormData({
          ...formData,
          [key]: value,
@@ -19,7 +19,7 @@ export const useForm = (formFields) => {
 
    return [
       formData,
-      changeFormData,
+      updateForm,
       resetForm
    ];
 };
