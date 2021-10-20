@@ -8,6 +8,10 @@ import { Hero } from "./Hero";
 import { About } from './About';
 import { Projects } from './Projects';
 import { Contact } from './Contact';
+import { SocialMedia } from "./SocialMedia";
+import { FormHOC } from "./FormHOC";
+import { FormUI } from "./FormUI";
+import { Footer } from "./Footer";
 
 export const App = () => {
   return (
@@ -19,7 +23,11 @@ export const App = () => {
       <Hero />
       <About />
       <Projects />
-      <Contact />
+      <Contact>
+        <SocialMedia />
+        <FormHOC Component={FormUI} />
+      </Contact>
+      <Footer />
     </div>
   );
 };

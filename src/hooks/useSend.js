@@ -26,11 +26,11 @@ export const useSend = () => {
          Params.serviceID,
          Params.templateID,
          data,
-         Params.userID
+         Params.userID,
       )
-         .then(res => setStatus('sent')) //if the information is sent correctly, we set the status to 'sent'
-         .catch(err => setStatus('error')) // otherwise we set the status to 'error'
-         .finally(() => setStatus('initial')); // and at the end we reset our status to 'initial'
+         .then(() => setStatus('sent')) //if the information is sent correctly, we set the status to 'sent'
+         .catch(() => setStatus('error')); // otherwise we set the status to 'error'
+      // .finally(() => setStatus('initial')); // and at the end we reset our status to 'initial'
    };
 
    return [status, sendData];
