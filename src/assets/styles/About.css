@@ -1,0 +1,23 @@
+.About {
+	width: 100%;
+	height: auto;
+	padding: 0 20px;
+}
+
+.About__title {
+	margin-bottom: 15px;
+}
+
+.About__picture {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 25px 0;
+}
+
+.picture__img {
+	border-radius: 10px;
+	box-shadow: 5px 10px 13px var(--shadow);
+}
