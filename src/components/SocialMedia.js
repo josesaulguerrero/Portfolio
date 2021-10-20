@@ -7,6 +7,7 @@ import Facebook from '../assets/pictures/facebook.png';
 import Instagram from '../assets/pictures/Instagram.png';
 import LinkedIn from '../assets/pictures/Linkedin.png';
 import GitHub from '../assets/pictures/Github.png';
+import '../assets/styles/SocialMedia.css';
 
 export const SocialMedia = () => {
    const [data] = useState([

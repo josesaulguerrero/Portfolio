@@ -1,5 +1,6 @@
 //libraries and hooks
 //assets
+import '../assets/styles/Form.css';
 //components
 import { Button } from "./Button";
 import { Loader } from "./Loader";
@@ -7,7 +8,7 @@ import { Loader } from "./Loader";
 export const FormUI = ({ onChange, onSubmit, status, formData: { name, email, message } }) => {
    return (
       <>
-         <p>Or send me an email!</p>
+         <p className='Contact__description' >Or send me an email!</p>
          <form className="Form" onSubmit={onSubmit}>
             <label htmlFor='name' className='input'>
                <span className='input__label'>Your name</span>
@@ -46,8 +47,8 @@ export const FormUI = ({ onChange, onSubmit, status, formData: { name, email, me
                   required
                ></textarea>
             </label>
-            {status === 'sent' && <p>the message was succesfully sent!</p>}
-            {status === 'error' && <p>the message couldn't be sent, please try again later...</p>}
+            {status === 'sent' && <p className='success' >the message was succesfully sent!</p>}
+            {status === 'error' && <p className='error'>the message couldn't be sent, please try again later...</p>}
             <Button size='large' disabled={status === 'loading' && true}>
                {status === 'initial' && 'Send it!'}
                {status === 'error' && 'Send it!'}

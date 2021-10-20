@@ -1,0 +1,14 @@
+.Projects {
+	width: 100%;
+	height: auto;
+	padding: 0 20px;
+	margin: 50px 0;
+}
+
+.Projects__title {
+	margin-bottom: 15px;
+}
+
+.Projects__description {
+	margin-bottom: 25px;
+}
