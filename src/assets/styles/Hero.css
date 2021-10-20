@@ -3,4 +3,21 @@
 	height: calc(
 		100vh - 70px
 	); /* I want the Hero component to fill all the viewport height, but the header is already taking 70px, so I use the calc() function to take those 70px from the viewport height */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0 20px;
+}
+
+.Hero__greet {
+	margin-bottom: 15px;
+}
+
+.Hero__features {
+	margin-bottom: 15px;
+}
+
+.Hero__introduction {
+	margin-bottom: 25px;
 }

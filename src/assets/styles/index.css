@@ -29,3 +29,26 @@ body {
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
+
+/* global styles */
+.title--small {
+	font-size: 2.5rem;
+	/* color: var(--unfocus-color); */
+}
+
+.title--large {
+	font-size: 4.5rem;
+	/* color: var(--main-color); */
+}
+
+.text--small {
+	font-size: 1.4rem;
+}
+
+.text--medium {
+	font-size: 1.6rem;
+}
+
+.text--large {
+	font-size: 1.8rem;
+}

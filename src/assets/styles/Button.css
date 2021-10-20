@@ -6,8 +6,8 @@
 	align-items: center;
 	border: none;
 	font-weight: bold;
-	background-image: var(--CTA);
-	color: var(--white);
+	/* background-image: var(--CTA); */
+	/* color: var(--white); */
 	will-change: transform;
 	transition: transform 0.3s;
 }
