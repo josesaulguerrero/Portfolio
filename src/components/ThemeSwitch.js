@@ -1,6 +1,7 @@
 //libraries and hooks
 //components
 //assets
+import '../assets/styles/ThemeSwitch.css';
 
 export const ThemeSwitch = () => {
    return (

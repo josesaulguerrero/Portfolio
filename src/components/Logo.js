@@ -9,8 +9,8 @@ export const Logo = () => {
          <img
             src={LogoImg}
             alt="Jose's logo"
-            width='60'
-            height='60'
+            width='70'
+            height='70'
             className="Logo__img" />
       </figure>
    );

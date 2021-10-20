@@ -1,0 +1,7 @@
+.Navbar {
+	width: 50%;
+	max-width: 150px; /* we don't want the navbar to grow over 150px while it's displayed on mobile */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

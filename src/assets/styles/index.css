@@ -10,10 +10,22 @@ html {
 	font-size: 62.5%;
 }
 
+:root {
+	--main-color: rgba(236, 148, 16, 1);
+	--secondary-color: rgba(61, 217, 35, 1);
+	--gradient: linear-gradient(180deg, #f5d151 0%, #ff963c 100%);
+	--unfocus-color: rgba(93, 128, 169, 1);
+	--white: rgba(255, 255, 255, 1);
+	--shadow: rgba(214, 214, 214, 1);
+	--CTA: linear-gradient(137.05deg, #ff6756 16.21%, #fecb60 86.29%);
+}
+
 body {
 	width: 100%;
 	height: 100%;
 	min-height: 100vh;
+	font-size: 1.6rem;
+	font-family: 'Montserrat', sans-serif, Arial;
 	overflow-x: hidden;
 	overflow-y: scroll;
 }

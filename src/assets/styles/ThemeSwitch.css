@@ -1,0 +1,16 @@
+.ThemeSwitch {
+	width: 70px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	padding: 0 1px;
+	background: var(--CTA);
+	border-radius: 20px;
+}
+
+.ThemeSwitch__ball {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	background-color: var(--white);
+}
