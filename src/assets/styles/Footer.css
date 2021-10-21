@@ -5,6 +5,16 @@
 	justify-content: flex-start;
 	align-items: center;
 	margin: 20px 0 0;
-	padding: 10px 15px;
+	padding: 10px 20px;
 	box-shadow: 0 -4px 6px var(--shadow);
 }
+
+/* media queries - start */
+
+@media screen and (min-width: 800px) {
+	.Footer {
+		padding: 10px 45px;
+	}
+}
+
+/* media queries - end */

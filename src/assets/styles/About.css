@@ -1,5 +1,6 @@
 .About {
 	width: 100%;
+	max-width: 1000px;
 	height: auto;
 	display: grid;
 	grid-template: auto 300px/ 1fr;

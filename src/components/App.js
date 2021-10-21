@@ -1,5 +1,6 @@
 //components and hooks
 //assets
+import '../assets/styles/App.css';
 //components
 import { Header } from "./Header";
 import { Logo } from './Logo';

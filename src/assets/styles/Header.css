@@ -11,6 +11,10 @@
 
 @media screen and (min-width: 800px) {
 	.Header {
+		position: absolute;
+		top: 10px;
+		width: 90%;
 		padding: 0 45px;
+		border-radius: 10px;
 	}
 }

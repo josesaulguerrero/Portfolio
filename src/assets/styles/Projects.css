@@ -1,5 +1,6 @@
 .Projects {
 	width: 100%;
+	max-width: 1100px;
 	height: auto;
 	padding: 0 20px;
 	margin: 50px 0;
@@ -12,3 +13,13 @@
 .Projects__description {
 	margin-bottom: 25px;
 }
+
+/* media queries - start */
+
+@media screen and (min-width: 800px) {
+	.Projects {
+		padding: 0 45px;
+	}
+}
+
+/* media queries - end */

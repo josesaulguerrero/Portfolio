@@ -1,19 +1,46 @@
 .Link {
+	position: relative;
 	width: 100%;
 	margin-bottom: 20px;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	text-decoration: none;
 	font-size: 3rem;
 	font-weight: bold;
 	color: black;
 }
 
+.Link::before {
+	content: '';
+	position: absolute;
+	bottom: 5px;
+	right: 0;
+	left: 0;
+	width: 80%;
+	height: 5px;
+	margin: 0 auto;
+	background-color: rebeccapurple;
+	visibility: hidden;
+	opacity: 0;
+	transform: scaleX(0);
+	will-change: visibility, opacity, transform;
+	transition: transform 0.2s, opacity 0.2s, visibility 0.2s;
+}
+
 /* media queries - start */
 
 @media screen and (min-width: 800px) {
 	.Link {
+		height: 100%;
 		font-size: 2rem;
 		margin: 0;
+	}
+
+	.Link:hover::before {
+		visibility: visible;
+		opacity: 1;
+		transform: scaleX(1);
 	}
 }
 

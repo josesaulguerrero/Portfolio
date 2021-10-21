@@ -1,5 +1,6 @@
 .Hero {
 	width: 100%;
+	max-width: 1100px;
 	height: calc(
 		100vh - 70px
 	); /* I want the Hero component to fill all the viewport height, but the header is already taking 70px, so I use the calc() function to take those 70px from the viewport height */
@@ -19,5 +20,18 @@
 }
 
 .Hero__introduction {
+	max-width: 650px;
 	margin-bottom: 25px;
 }
+
+/* media queries - start */
+
+@media screen and (min-width: 800px) {
+	.Hero {
+		padding: 0 45px;
+		/* height: 100vh; */
+		margin-top: 70px;
+	}
+}
+
+/* media queries - end */
