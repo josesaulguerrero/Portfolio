@@ -5,13 +5,15 @@ import '../assets/styles/About.css';
 
 export const About = () => {
    return (
-      <section className="About">
-         <h2 className='About__title title--small'>A bit about me</h2>
-         <p className='About__description text--large'>
-            Hello! I am Jose, an enthusiast front-end programmer who is always ready to learn more. I love building accessible and easy-to-use web applications and my goal is to create experiences that everyone will enjoy and remember.
-            <br /> <br />
-            In 💚️ with technology and continuous learning.
-         </p>
+      <section className="About" id='About'>
+         <section className="About__content">
+            <h2 className='About__title title--small'>A bit about me</h2>
+            <p className='About__description text--large'>
+               Hello! I am Jose, an enthusiast front-end programmer who is always ready to learn more. I love building accessible and easy-to-use web applications and my goal is to create experiences that everyone will enjoy and remember.
+               <br /> <br />
+               In 💚️ with technology and continuous learning.
+            </p>
+         </section>
          <figure className="About__picture">
             <img
                width='260'

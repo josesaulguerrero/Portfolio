@@ -1,4 +1,5 @@
 .MenuIcon {
+	position: relative;
 	width: 40px;
 	height: 40px;
 	border-radius: 5px;
@@ -7,7 +8,8 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 7px 0;
-	box-shadow: 3px 3px 6px var(--shadow);
+	background-color: var(--white);
+	z-index: 2;
 }
 
 .MenuIcon__line--first,
@@ -17,4 +19,67 @@
 	height: 4px;
 	background-color: var(--secondary-color);
 	border-radius: 5px;
+	transform-origin: left center;
+	transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
 }
+
+/* this styles are applied when the burger menu icon is clicked */
+
+/*gives a neumorphism effect to the burger-menu icon*/
+
+.MenuIcon::before,
+.MenuIcon::after {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-radius: 5px;
+	background-color: transparent;
+	transition: transform 0.4s, opacity 0.4s, visibility 0.4s;
+}
+
+.MenuIcon::before {
+	box-shadow: 3px 3px 6px var(--shadow);
+}
+
+.MenuIcon::after {
+	opacity: 0;
+	visibility: hidden;
+	box-shadow: inset 3px 4px 6px var(--shadow);
+}
+
+.MenuIcon.visible::before {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.MenuIcon.visible::after {
+	opacity: 1;
+	visibility: visible;
+}
+/*-----*/
+
+/*transforms the lines into a cross*/
+.MenuIcon.visible > .MenuIcon__line--first,
+.MenuIcon.visible .MenuIcon__line--third {
+	background-color: red;
+}
+
+.MenuIcon.visible > .MenuIcon__line--first {
+	transform: translateX(4px) rotate(43deg);
+}
+
+.MenuIcon.visible .MenuIcon__line--second {
+	opacity: 0;
+	visibility: hidden;
+	transform: translateX(-20px);
+}
+
+.MenuIcon.visible > .MenuIcon__line--third {
+	transform: translateX(4px) rotate(-43deg);
+}
+/*-------*/
+
+/* ---------------------------------------------------------------- */

@@ -5,7 +5,7 @@ import '../assets/styles/Form.css';
 import { Button } from "./Button";
 import { Loader } from "./Loader";
 
-export const FormUI = ({ onChange, onSubmit, status, formData: { name, email, message } }) => {
+export const FormUI = ({ onChange, onSubmit, status: { initial, loading, sent, error }, formData: { name, email, message } }) => {
    return (
       <>
          <p className='Contact__description' >Or send me an email!</p>
@@ -47,13 +47,11 @@ export const FormUI = ({ onChange, onSubmit, status, formData: { name, email, me
                   required
                ></textarea>
             </label>
-            {status === 'sent' && <p className='success' >the message was succesfully sent!</p>}
-            {status === 'error' && <p className='error'>the message couldn't be sent, please try again later...</p>}
-            <Button size='large' disabled={status === 'loading' && true}>
-               {status === 'initial' && 'Send it!'}
-               {status === 'error' && 'Send it!'}
-               {status === 'sent' && 'Send it!'}
-               {status === 'loading' && <Loader />}
+            {sent === true && <p className='success' >the message was succesfully sent!</p>}
+            {error === true && <p className='error'>the message couldn't be sent, please try again later...</p>}
+            <Button size='large' disabled={loading && true}>
+               {/* {loading && <Loader />} */}
+               {(initial || error || sent) ? 'send it!' : <Loader />}
             </Button>
          </form>
       </>

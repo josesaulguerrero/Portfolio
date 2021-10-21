@@ -1,7 +1,20 @@
 .About {
 	width: 100%;
 	height: auto;
+	display: grid;
+	grid-template: 1fr 1fr / 1fr;
+	grid-template-areas:
+		'about-content'
+		'about-image';
+	justify-items: center;
+	align-items: center;
 	padding: 0 20px;
+}
+
+.About__content {
+	grid-area: about-content;
+	width: 100%;
+	height: 100%;
 }
 
 .About__title {
@@ -9,6 +22,7 @@
 }
 
 .About__picture {
+	grid-area: about-image;
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -21,3 +35,20 @@
 	border-radius: 10px;
 	box-shadow: 5px 10px 13px var(--shadow);
 }
+
+/* media queries - start */
+
+@media screen and (min-width: 800px) {
+	.About {
+		grid-template: 1fr / 60% 40%;
+		grid-template-areas: 'about-content about-image';
+	}
+
+	.About__picture {
+		justify-content: flex-end;
+		align-items: flex-start;
+		margin: 0;
+	}
+}
+
+/* media queries - end */

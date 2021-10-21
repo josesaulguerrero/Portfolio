@@ -2,7 +2,12 @@ import { useState } from "react";
 import { init, send } from 'emailjs-com';
 
 export const useSend = () => {
-   const [status, setStatus] = useState('initial');
+   const [status, setStatus] = useState({
+      initial: true,
+      loading: false,
+      sent: false,
+      error: false
+   });
    const Params = {
       userID: 'user_YwtetwnsXeNTtKH3K4p2N',
       templateID: 'template_43q0nkj',
@@ -10,8 +15,12 @@ export const useSend = () => {
    };
 
    const sendData = (data) => {
-      //the information is being sent, so we set the status to 'loading'
-      setStatus('loading');
+      //the information is being sent, so we set status.loading to true and status.initial to false.
+      setStatus({
+         ...status,
+         loading: true,
+         initial: false
+      });
 
       //we init our library with our user ID
       init(Params.userID);
@@ -28,9 +37,18 @@ export const useSend = () => {
          data,
          Params.userID,
       )
-         .then(() => setStatus('sent')) //if the information is sent correctly, we set the status to 'sent'
-         .catch(() => setStatus('error')); // otherwise we set the status to 'error'
-      // .finally(() => setStatus('initial')); // and at the end we reset our status to 'initial'
+         .then(() => setStatus({
+            ...status,
+            sent: true,
+            initial: true,
+            loading: false
+         })) //if the information is sent correctly, we set status.sent and status.initial to true; loading becomes false.
+         .catch(() => setStatus({
+            ...status,
+            error: true,
+            initial: true,
+            loading: false
+         })); //otherwise, if anything fails then we set status.error and status.initial to true, also loading turns to be false.
    };
 
    return [status, sendData];

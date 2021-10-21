@@ -1,3 +1,28 @@
 .Menu {
-	position: absolute;
+	position: fixed;
+	background-color: var(--white);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 1;
+	will-change: visibility, transform, opacity;
+	transition: visibility 0.5s, transform 0.5s, opacity 0.5s;
+	transform-origin: left top;
+}
+
+.Menu.hidden {
+	opacity: 0;
+	visibility: hidden;
+	transform: translatey(-100%) rotate(-45deg);
+}
+
+.Menu.visible {
+	opacity: 1;
+	visibility: visible;
+	transform: translateX(0) rotate(0);
 }
