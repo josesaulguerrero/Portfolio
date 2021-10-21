@@ -83,3 +83,13 @@
 /*-------*/
 
 /* ---------------------------------------------------------------- */
+
+/* media queries - start */
+
+@media screen and (min-width: 800px) {
+	.MenuIcon {
+		display: none;
+	}
+}
+
+/* media queries - end */

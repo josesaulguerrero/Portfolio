@@ -3,7 +3,18 @@
 	margin-bottom: 20px;
 	text-align: center;
 	text-decoration: none;
-	font-size: 30px;
+	font-size: 3rem;
 	font-weight: bold;
 	color: black;
 }
+
+/* media queries - start */
+
+@media screen and (min-width: 800px) {
+	.Link {
+		font-size: 2rem;
+		margin: 0;
+	}
+}
+
+/* media queries - end */

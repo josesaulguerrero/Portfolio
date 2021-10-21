@@ -26,3 +26,22 @@
 	visibility: visible;
 	transform: translateX(0) rotate(0);
 }
+
+/* media queries - start */
+
+@media screen and (min-width: 800px) {
+	.Menu,
+	.Menu.visible,
+	.Menu.hidden {
+		position: static;
+		min-width: 300px;
+		flex-direction: row;
+		visibility: visible;
+		transform: none;
+		opacity: 1;
+		justify-content: space-between;
+		align-items: center;
+	}
+}
+
+/* media queries - end */

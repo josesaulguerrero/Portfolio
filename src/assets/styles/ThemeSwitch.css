@@ -14,3 +14,13 @@
 	border-radius: 50%;
 	background-color: var(--white);
 }
+
+/* media queries - start */
+
+@media screen and (min-width: 800px) {
+	.ThemeSwitch {
+		margin-right: 40px;
+	}
+}
+
+/* media queries - end */
