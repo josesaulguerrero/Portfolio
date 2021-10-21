@@ -38,6 +38,7 @@
 		position: static;
 		min-width: 300px;
 		height: 100%;
+		min-height: unset;
 		flex-direction: row;
 		visibility: visible;
 		transform: none;

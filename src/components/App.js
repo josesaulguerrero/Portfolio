@@ -13,6 +13,7 @@ import { SocialMedia } from "./SocialMedia";
 import { FormHOC } from "./FormHOC";
 import { FormUI } from "./FormUI";
 import { Footer } from "./Footer";
+import { ScrollToTop } from './ScrollToTop';
 
 export const App = () => {
   return (
@@ -29,6 +30,7 @@ export const App = () => {
         <FormHOC Component={FormUI} />
       </Contact>
       <Footer />
+      <ScrollToTop />
     </div>
   );
 };
