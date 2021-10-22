@@ -1,4 +1,7 @@
 //components and hooks
+import { useContext } from 'react';
+//context
+import { ThemeContext } from '../context/ThemeContext';
 //assets
 import '../assets/styles/App.css';
 //components
@@ -13,8 +16,9 @@ import { Footer } from "./Footer";
 import { ScrollToTop } from './ScrollToTop';
 
 export const App = () => {
+  const { theme } = useContext(ThemeContext);
   return (
-    <div className="App">
+    <div className={`App ${theme}`}>
       <Header>
         <Logo />
         <Navbar />

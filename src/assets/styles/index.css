@@ -14,9 +14,10 @@ html {
 :root {
 	--main-color: rgba(236, 148, 16, 1);
 	--secondary-color: rgba(61, 217, 35, 1);
-	--gradient: linear-gradient(180deg, #f5d151 0%, #ff963c 100%);
 	--unfocus-color: rgba(93, 128, 169, 1);
-	--white: rgba(255, 255, 255, 1);
+	--background: rgba(255, 255, 255, 1);
+	--text-color: rgb(20, 20, 20);
+	--gradient: linear-gradient(180deg, #f5d151 0%, #ff963c 100%);
 	--shadow: rgba(214, 214, 214, 1);
 	--CTA: linear-gradient(137.05deg, #ff6756 16.21%, #fecb60 86.29%);
 }
@@ -29,27 +30,5 @@ body {
 	font-family: 'Montserrat', sans-serif, Arial;
 	overflow-x: hidden;
 	overflow-y: scroll;
-}
-
-/* global styles */
-.title--small {
-	font-size: 2.5rem;
-	/* color: var(--unfocus-color); */
-}
-
-.title--large {
-	font-size: 4rem;
-	/* color: var(--main-color); */
-}
-
-.text--small {
-	font-size: 1.3rem;
-}
-
-.text--medium {
-	font-size: 1.4rem;
-}
-
-.text--large {
-	font-size: 1.7rem;
+	color: var(--text-color);
 }
