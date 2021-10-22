@@ -1,6 +1,6 @@
 .About {
 	width: 100%;
-	max-width: 1000px;
+	max-width: 1100px;
 	height: auto;
 	display: grid;
 	grid-template: auto 300px/ 1fr;
@@ -43,7 +43,7 @@
 	.About {
 		grid-template: 1fr / repeat(2, 1fr);
 		grid-template-areas: 'about-content about-image';
-		padding: 0 45px;
+		padding: 0 90px;
 	}
 
 	.About__picture {

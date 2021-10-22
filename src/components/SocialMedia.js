@@ -42,6 +42,7 @@ export const SocialMedia = () => {
                image={image}
             />
          )}
+         <div className="SocialMedia__line"></div>
       </section>
    );
 };

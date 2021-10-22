@@ -15,4 +15,13 @@
 
 .Contact__description {
 	text-align: center;
+	margin: 5px;
+}
+
+/* media queries */
+
+@media screen and (min-width: 800px) {
+	.Contact__description.will-disappear {
+		display: none;
+	}
 }

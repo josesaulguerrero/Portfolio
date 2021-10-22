@@ -13,7 +13,6 @@ export const FormUI = ({
 }) => {
    return (
       <>
-         <p className='Contact__description' >Or send me an email!</p>
          <form className="Form" onSubmit={onSubmit}>
             <label htmlFor='name' className='input'>
                <span className='input__label'>Your name</span>

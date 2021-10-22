@@ -38,18 +38,18 @@ body {
 }
 
 .title--large {
-	font-size: 4.5rem;
+	font-size: 4rem;
 	/* color: var(--main-color); */
 }
 
 .text--small {
-	font-size: 1.4rem;
+	font-size: 1.3rem;
 }
 
 .text--medium {
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 }
 
 .text--large {
-	font-size: 1.8rem;
+	font-size: 1.7rem;
 }

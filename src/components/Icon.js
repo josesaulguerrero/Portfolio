@@ -14,8 +14,8 @@ export const Icon = ({ name, link, image }) => {
          <img
             src={image}
             alt={name}
-            width='40'
-            height='40'
+            width='35'
+            height='35'
          />
       </a>
    );

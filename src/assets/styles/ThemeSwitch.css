@@ -12,8 +12,10 @@
 .ThemeSwitch__ball {
 	width: 28px;
 	height: 28px;
+	border: 3px solid transparent;
 	border-radius: 50%;
 	background-color: var(--white);
+	/* box-shadow: 2px 2px 3px var(--shadow); */
 }
 
 /* media queries - start */

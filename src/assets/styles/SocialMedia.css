@@ -6,3 +6,34 @@
 	align-items: center;
 	margin: 15px;
 }
+
+.SocialMedia__line {
+	display: none;
+	width: 2px;
+	height: 100px;
+	background-color: black;
+}
+
+/* media queries */
+
+@media screen and (min-width: 800px) {
+	.SocialMedia {
+		position: fixed;
+		left: 30px;
+		bottom: 0px;
+		flex-direction: column;
+		width: auto;
+		height: 300px;
+		max-width: unset;
+		margin: 0;
+	}
+	.SocialMedia__line {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.SocialMedia {
+		left: 50px;
+	}
+}

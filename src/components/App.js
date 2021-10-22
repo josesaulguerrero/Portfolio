@@ -9,9 +9,6 @@ import { Hero } from "./Hero";
 import { About } from './About';
 import { Projects } from './Projects';
 import { Contact } from './Contact';
-import { SocialMedia } from "./SocialMedia";
-import { FormHOC } from "./FormHOC";
-import { FormUI } from "./FormUI";
 import { Footer } from "./Footer";
 import { ScrollToTop } from './ScrollToTop';
 
@@ -25,10 +22,7 @@ export const App = () => {
       <Hero />
       <About />
       <Projects />
-      <Contact>
-        <SocialMedia />
-        <FormHOC Component={FormUI} />
-      </Contact>
+      <Contact />
       <Footer />
       <ScrollToTop />
     </div>

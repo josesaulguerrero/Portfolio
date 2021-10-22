@@ -6,7 +6,7 @@ import '../assets/styles/Hero.css';
 
 export const Hero = () => {
    return (
-      <main className="Hero">
+      <main className="Hero" id='Hero'>
          <p className="Hero__greet text--large">Hi, I am</p>
          <h1 className='Hero__name title--large'>Jose Guerrero</h1>
          <h2 className="Hero__features title--small">& I create amazing experiences.</h2>

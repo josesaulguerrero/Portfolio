@@ -5,13 +5,13 @@ import LogoImg from '../assets/pictures/logo.png';
 
 export const Logo = () => {
    return (
-      <figure className="Logo">
+      <a href='#Hero' className="Logo">
          <img
             src={LogoImg}
             alt="Jose's logo"
             width='70'
             height='70'
             className="Logo__img" />
-      </figure>
+      </a>
    );
 };
