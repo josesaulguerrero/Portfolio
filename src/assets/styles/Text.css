@@ -1,12 +1,12 @@
 /* global styles */
 .title--small {
 	font-size: 2.5rem;
-	/* color: var(--unfocus-color); */
+	color: var(--unfocus-color);
 }
 
 .title--large {
 	font-size: 3.5rem;
-	/* color: var(--main-color); */
+	color: var(--main-color);
 }
 
 .text--small {
@@ -20,6 +20,10 @@
 .text--large {
 	font-size: 1.7rem;
 }
+
+/* dark mode - start */
+
+/* dark mode - end */
 
 @media screen and (min-width: 600px) {
 	.title--small {

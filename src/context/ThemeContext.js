@@ -4,8 +4,8 @@ export const ThemeContext = createContext('light');
 
 export const ThemeContextProvider = ({ children }) => {
    const [theme, setTheme] = useState(
-      window.localStorage.getItem('theme')
-         ? JSON.parse(window.localStorage.getItem('theme'))
+      window.localStorage.getItem('Theme')
+         ? JSON.parse(window.localStorage.getItem('Theme'))
          : 'light'
    );
    const handleSetTheme = () => {

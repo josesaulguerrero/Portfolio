@@ -13,7 +13,9 @@ export const Hero = () => {
          <p className="Hero__introduction text--large">
             I'm a web developer who builds friendly user interfaces using HTML, CSS, JavaScript, and React, following some good practices like reusable, clean, and readable code, which leads to accessible, fast and smooth experiences.
          </p>
-         <Button size='medium'>View work</Button>
+         <Button size='medium'>
+            <a href="#Work">View work</a>
+         </Button>
       </main>
    );
 };

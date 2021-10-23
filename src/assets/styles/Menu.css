@@ -1,6 +1,5 @@
 .Menu {
 	position: fixed;
-	background-color: var(--background);
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -10,6 +9,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	background-color: var(--lighter-background);
 	z-index: 1;
 	will-change: visibility, transform, opacity;
 	transition: visibility 0.5s, transform 0.5s, opacity 0.5s;
@@ -28,6 +28,14 @@
 	visibility: visible;
 	transform: translateX(0) rotate(0);
 }
+
+/* dark mode styles - start */
+
+.dark .Menu {
+	background-color: var(--dark-lighter-background);
+}
+
+/* dark mode styles - end */
 
 /* media queries - start */
 

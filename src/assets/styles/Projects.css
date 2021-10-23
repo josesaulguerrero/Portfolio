@@ -4,6 +4,7 @@
 	height: auto;
 	padding: 0 20px;
 	margin: 50px 0;
+	background-color: var(--background);
 }
 
 .Projects__title {
@@ -13,6 +14,14 @@
 .Projects__description {
 	margin-bottom: 25px;
 }
+
+/* dark mode styles - start */
+
+.dark .Projects {
+	background-color: var(--dark-background);
+}
+
+/* dark mode styles - end */
 
 /* media queries - start */
 

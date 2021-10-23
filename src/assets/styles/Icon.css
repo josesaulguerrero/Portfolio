@@ -1,0 +1,7 @@
+.Icon {
+	filter: drop-shadow(5px 6px 8px var(--shadow));
+}
+
+.dark .Icon {
+	filter: drop-shadow(5px 6px 8px var(--dark-shadow));
+}

@@ -8,6 +8,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
+	background-color: var(--background);
 	padding: 0 20px;
 }
 
@@ -23,6 +24,14 @@
 	max-width: 650px;
 	margin-bottom: 25px;
 }
+
+/* dark mode - start */
+
+.dark .Hero {
+	background-color: var(--dark-background);
+}
+
+/* dark mode - end */
 
 /* media queries - start */
 

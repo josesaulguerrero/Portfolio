@@ -1,13 +1,12 @@
 .ScrollToTop {
 	position: fixed;
-	bottom: 30px;
+	bottom: 40px;
 	right: 20px;
 	width: 50px;
 	height: 50px;
 	border: none;
 	outline: none;
 	cursor: pointer;
-	background-color: rebeccapurple;
 	border-radius: 50%;
 	will-change: transform, opacity, visibility;
 	transition: transform 0.3s, opacity 0.3s, visibility 0.3s;
@@ -25,19 +24,10 @@
 	transform: translateY(0px);
 }
 
-.ScrollToTop__line--left,
-.ScrollToTop__line--right {
-	width: 50%;
-	height: 4px;
-	position: absolute;
-	bottom: 10px;
-	background-color: red;
+.ScrollToTop:hover {
+	transform: scale(1.1);
 }
 
-.ScrollToTop__line--left {
-	transform: rotate(45deg);
-}
-
-.ScrollToTop__line--right {
-	transform: rotate(-45deg);
+.ScrollToTop:active {
+	transform: scale(0.8);
 }

@@ -5,4 +5,14 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	color: var(--text-color);
+	background-color: var(--background);
 }
+/* dark mode - start */
+
+.App.dark {
+	background-color: var(--dark-background);
+	color: var(--dark-text-color);
+}
+
+/* dark mode - end */

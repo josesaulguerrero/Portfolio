@@ -12,14 +12,26 @@ html {
 }
 
 :root {
-	--main-color: rgba(236, 148, 16, 1);
+	--main-color: #506ad4;
 	--secondary-color: rgba(61, 217, 35, 1);
-	--unfocus-color: rgba(93, 128, 169, 1);
-	--background: rgba(255, 255, 255, 1);
-	--text-color: rgb(20, 20, 20);
-	--gradient: linear-gradient(180deg, #f5d151 0%, #ff963c 100%);
-	--shadow: rgba(214, 214, 214, 1);
-	--CTA: linear-gradient(137.05deg, #ff6756 16.21%, #fecb60 86.29%);
+	--unfocus-color: #67b5ca;
+	--background: #d8e3e9;
+	--lighter-background: white;
+	--text-color: #272343;
+	--gradient: linear-gradient(137.05deg, #ff6756 16.21%, #fecb60 86.29%);
+	--shadow: #b8c1c6;
+	--light: #f8ffff;
+	--CTA: #f2cc39;
+	/* dark mode colors */
+	--dark-main-color: #506ad4;
+	--dark-secondary-color: rgb(7, 195, 252);
+	--dark-unfocus-color: #67b5ca;
+	--dark-background: #0a192f;
+	--dark-lighter-background: rgb(53, 52, 52);
+	--dark-text-color: #dddddd;
+	--dark-gradient: linear-gradient(137.05deg, #ff6756 16.21%, #fecb60 86.29%);
+	--dark-shadow: #535657;
+	--dark-CTA: #4912e0;
 }
 
 body {
@@ -30,5 +42,4 @@ body {
 	font-family: 'Montserrat', sans-serif, Arial;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	color: var(--text-color);
 }

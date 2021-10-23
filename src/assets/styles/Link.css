@@ -6,7 +6,7 @@
 	justify-content: center;
 	align-items: center;
 	text-decoration: none;
-	font-size: 3rem;
+	font-size: 4rem;
 	font-weight: bold;
 	color: var(--text-color);
 }
@@ -20,13 +20,25 @@
 	width: 80%;
 	height: 5px;
 	margin: 0 auto;
-	background-color: rebeccapurple;
+	background-color: var(--main-color);
 	visibility: hidden;
 	opacity: 0;
 	transform: scaleX(0);
 	will-change: visibility, opacity, transform;
 	transition: transform 0.2s, opacity 0.2s, visibility 0.2s;
 }
+
+/* dark mode styles - start */
+
+.dark .Link {
+	color: var(--dark-text-color);
+}
+
+.dark .Link::before {
+	background-color: var(--dark-main-color);
+}
+
+/* dark mode styles - end */
 
 /* media queries - start */
 

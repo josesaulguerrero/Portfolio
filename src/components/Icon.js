@@ -1,6 +1,7 @@
 //libraries and hooks
 //components
 //assets
+import '../assets/styles/Icon.css';
 
 export const Icon = ({ name, link, image }) => {
    return (

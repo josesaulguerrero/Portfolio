@@ -4,11 +4,20 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	margin: 20px 0 0;
+	margin: 40px 0 0;
 	padding: 10px 20px;
 	background-color: var(--background);
-	box-shadow: 0 -4px 6px var(--shadow);
+	box-shadow: 0 -12px 17px var(--shadow);
 }
+
+/* media queries - start */
+
+.dark .Footer {
+	background-color: var(--dark-background);
+	box-shadow: 0 -4px 6px var(--dark-shadow);
+}
+
+/* media queries - end */
 
 /* media queries - start */
 
