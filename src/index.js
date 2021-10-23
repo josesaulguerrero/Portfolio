@@ -6,6 +6,7 @@ import { ThemeContextProvider } from './context/ThemeContext';
 //assets
 import './assets/styles/index.css';
 import './assets/styles/Text.css';
+import './assets/styles/ScrollBar.css';
 //components
 import { App } from './components/App';
 

@@ -1,7 +1,16 @@
 .Icon {
 	filter: drop-shadow(5px 6px 8px var(--shadow));
+	transition: transform 0.2s;
 }
+
+.Icon:hover {
+	transform: scale(1.1);
+}
+
+/* dark mode styles - start */
 
 .dark .Icon {
 	filter: drop-shadow(5px 6px 8px var(--dark-shadow));
 }
+
+/* dark mode styles - end */
