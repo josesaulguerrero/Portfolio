@@ -6,11 +6,15 @@
 <div align="center">
   <h3>
     <a href="https://github.com/josesaulguerrero/Portfolio">
-      Repository
+      repository
     </a>
     <span> | </span>
     <a href="https://joseguerrero.vercel.app/">
       webpage
+    </a>
+    <span> | </span>
+    <a href="https://www.figma.com/file/mVqvbHigkCs4on7oclvTCE/Portfolio-redesign?node-id=0%3A1">
+      design
     </a>
   </h3>
 </div>
@@ -70,5 +74,5 @@ $ yarn start
 
 ## Contact
 
--   Website [your-website.com](https://joseguerrero.vercel.app)
--   GitHub [@your-username](https://github.com/josesaulguerrero/Portfolio)
+-   Website [joseguerrero](https://joseguerrero.vercel.app)
+-   GitHub [@josesaulguerrero](https://github.com/josesaulguerrero/Portfolio)
