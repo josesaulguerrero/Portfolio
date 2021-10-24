@@ -5,6 +5,7 @@ import { ThemeContext } from '../context/ThemeContext';
 //assets
 import '../assets/styles/App.css';
 //components
+import { Head } from './Head';
 import { Header } from "./Header";
 import { Logo } from './Logo';
 import { Navbar } from "./Navbar";
@@ -19,6 +20,7 @@ export const App = () => {
   const { theme } = useContext(ThemeContext);
   return (
     <div className={`App ${theme}`}>
+      <Head />
       <Header>
         <Logo />
         <Navbar />
