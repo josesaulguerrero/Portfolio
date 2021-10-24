@@ -6,6 +6,7 @@ import { Helmet } from 'react-helmet';
 export const Head = () => {
    return (
       <Helmet>
+         <meta name="title" content='Jose Guerrero' />
          <meta name="description" content="This is a webpage where I talk about me and the projects I have built along my way to become a front-end developer." />
          {/* open graph */}
          <meta property="og:title" content="Jose Guerrero" />
