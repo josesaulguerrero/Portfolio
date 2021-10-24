@@ -8,7 +8,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 7px 0;
-	background-color: white;
+	background-color: var(--lighter-background);
 	z-index: 2;
 }
 
@@ -83,6 +83,28 @@
 /*-------*/
 
 /* ---------------------------------------------------------------- */
+
+/* dark mode styles - start */
+
+.dark .MenuIcon {
+	background-color: var(--dark-lighter-color);
+}
+
+.dark .MenuIcon__line--first,
+.dark .MenuIcon__line--second,
+.dark .MenuIcon__line--third {
+	background-color: var(--dark-secondary-color);
+}
+
+.dark .MenuIcon::before {
+	box-shadow: 3px 3px 16px var(--dark-shadow);
+}
+
+.dark .MenuIcon::after {
+	box-shadow: inset 3px 3px 10px var(--dark-shadow);
+}
+
+/* dark mode styles - end */
 
 /* media queries - start */
 

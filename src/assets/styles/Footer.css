@@ -14,7 +14,7 @@
 
 .dark .Footer {
 	background-color: var(--dark-background);
-	box-shadow: 0 -4px 6px var(--dark-shadow);
+	box-shadow: 0 -10px 40px var(--dark-shadow);
 }
 
 /* media queries - end */

@@ -33,10 +33,11 @@
 /* dark theme - start */
 
 .dark .ThemeSwitch {
-	background-color: var(--dark-gradient);
+	background: var(--dark-gradient);
 }
 
 .dark .ThemeSwitch__ball {
+	background-color: var(--dark-lighter-background);
 	transform: translateX(40px);
 }
 

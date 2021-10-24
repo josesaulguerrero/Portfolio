@@ -23,15 +23,15 @@ html {
 	--light: #f8ffff;
 	--CTA: #f2cc39;
 	/* dark mode colors */
-	--dark-main-color: #506ad4;
-	--dark-secondary-color: rgb(7, 195, 252);
-	--dark-unfocus-color: #67b5ca;
-	--dark-background: #0a192f;
-	--dark-lighter-background: rgb(53, 52, 52);
+	--dark-main-color: #4698f5;
+	--dark-secondary-color: #03dac5;
+	--dark-unfocus-color: #01579b;
+	--dark-background: #191e2c;
+	--dark-lighter-background: #2c3753;
 	--dark-text-color: #dddddd;
-	--dark-gradient: linear-gradient(137.05deg, #ff6756 16.21%, #fecb60 86.29%);
-	--dark-shadow: #535657;
-	--dark-CTA: #4912e0;
+	--dark-gradient: linear-gradient(137.05deg, #6a82fb 16.21%, #dd2449 86.29%);
+	--dark-shadow: #14151a;
+	--dark-CTA: #7b15f8;
 }
 
 body {

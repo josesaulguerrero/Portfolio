@@ -45,7 +45,7 @@
 }
 
 .dark .picture__img {
-	box-shadow: 5px 10px 13px var(--dark-shadow);
+	box-shadow: 5px 10px 40px var(--dark-shadow);
 }
 
 /* dark mode - end */

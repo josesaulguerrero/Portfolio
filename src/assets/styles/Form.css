@@ -30,7 +30,7 @@
 	border: none;
 	padding: 5px 10px;
 	border-radius: 20px;
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 	font-family: 'Montserrat', sans-serif;
 	margin-top: 5px;
 	box-shadow: inset 0px -1px 5px var(--shadow);
@@ -69,8 +69,12 @@ textarea.input__field {
 
 .dark .Form {
 	background-color: var(--dark-lighter-background);
-	box-shadow: 6px 9px 12px var(--dark-shadow),
-		inset -2px -2px 4px var(--dark-shadow);
+	box-shadow: 5px 12px 60px var(--dark-shadow);
+}
+
+.dark .input__field::placeholder,
+.dark .input__field {
+	color: var(--dark-text-color);
 }
 
 .dark .input__field {

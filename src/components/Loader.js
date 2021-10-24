@@ -1,6 +1,6 @@
 //libraries and hooks
 //assets
-import '../assets/styles/Spinner.css';
+import '../assets/styles/Loader.css';
 //components
 
 export const Loader = () => {
