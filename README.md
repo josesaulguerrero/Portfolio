@@ -70,5 +70,5 @@ $ yarn start
 
 ## Contact
 
--   Website [your-website.com](https://joseguerrero.vercel.app)
--   GitHub [@your-username](https://github.com/josesaulguerrero/Portfolio)
+-   Website [joseguerrero](https://joseguerrero.vercel.app)
+-   GitHub [@josesaulguerrero](https://github.com/josesaulguerrero/Portfolio)
