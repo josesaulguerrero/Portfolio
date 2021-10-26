@@ -9,7 +9,7 @@
       repository
     </a>
     <span> | </span>
-    <a href="https://joseguerrero.vercel.app/">
+    <a href="https://joseguerreroserrano.netlify.app/">
       webpage
     </a>
     <span> | </span>
@@ -74,5 +74,5 @@ $ yarn start
 
 ## Contact
 
--   Website [joseguerrero](https://joseguerrero.vercel.app)
+-   Website [joseguerrero](https://joseguerreroserrano.netlify.app/)
 -   GitHub [@josesaulguerrero](https://github.com/josesaulguerrero/Portfolio)
