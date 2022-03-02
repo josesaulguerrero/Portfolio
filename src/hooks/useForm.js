@@ -1,25 +1,22 @@
 import { useState } from "react";
 
 export const useForm = (formFields) => {
-   //we declare the state for the fields that our form will contain.
-   const [formData, setFormData] = useState(formFields);
+   const [data, setData] = useState(formFields);
 
-   //this function receives a key and a value that help us update our form status.
    const updateForm = (key, value) => {
-      setFormData({
-         ...formData,
+      setData({
+         ...data,
          [key]: value,
       });
    };
 
-   //and resetForm helps us reset all of our form fields.
    const resetForm = () => {
-      setFormData(formFields);
+      setData(formFields);
    };
 
-   return [
-      formData,
+   return {
+      data,
       updateForm,
       resetForm
-   ];
+   };
 };

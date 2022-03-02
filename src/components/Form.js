@@ -8,25 +8,22 @@ import { Button } from "./Button";
 import { Loader } from "./Loader";
 
 export const Form = () => {
-   const [formData, updateForm, resetForm] = useForm({
+   const { data, updateForm, resetForm } = useForm({
       name: '',
       email: '',
       message: '',
    });
-   const { name, email, message } = formData;
    //---------------------------------------
    const [status, sendData] = useMailer();
    const { initial, loading, sent, error } = status;
 
    const onChange = (event) => {
-      const { name, value } = event.target;
-      updateForm(name, value);
+      updateForm(event.target.name, event.target.value);
    };
 
    const onSubmit = (event) => {
       event.preventDefault();
-      // sendData(formData);
-      console.log(formData);
+      sendData(data);
       resetForm();
    };
 
@@ -40,8 +37,8 @@ export const Form = () => {
                   type='text'
                   name='name'
                   className='input__field'
-                  autoComplete='off'
-                  value={name}
+                  value={data.name}
+                  autoComplete='on'
                   onChange={onChange}
                   required
                />
@@ -53,8 +50,8 @@ export const Form = () => {
                   type='email'
                   name='email'
                   className='input__field'
-                  autoComplete='off'
-                  value={email}
+                  value={data.email}
+                  autoComplete='on'
                   onChange={onChange}
                   required
                />
@@ -65,7 +62,7 @@ export const Form = () => {
                   id='message'
                   name='message'
                   className='input__field'
-                  value={message}
+                  value={data.message}
                   onChange={onChange}
                   required
                ></textarea>
