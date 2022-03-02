@@ -1,0 +1,66 @@
+.Card {
+	width: clamp(300px, 315px, 330px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 15px;
+	background-color: var(--lighter-background);
+	border-radius: 5px;
+	box-shadow: 10px 10px 40px var(--shadow), -10px -10px 40px var(--light);
+}
+
+.Card__image {
+	width: 100%;
+	border-radius: 5px;
+}
+
+.Card__title {
+	font-size: 2rem;
+	align-self: flex-start;
+	margin: 10px 0;
+	color: var(--unfocus-color);
+}
+
+.Card__links {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.githubLink,
+.siteLink {
+	width: 45%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	padding: 10px;
+	border: 1px var(--main-color) solid;
+	color: var(--text-color);
+	border-radius: 5px;
+	will-change: transform;
+	transition: transform 0.2s ease-in-out;
+}
+
+.githubLink:hover,
+.siteLink:hover {
+	transform: scale(1.1);
+}
+
+/* dark mode */
+.dark .Card {
+	background-color: var(--dark-lighter-background);
+	box-shadow: 5px 12px 60px var(--dark-shadow);
+}
+
+.dark .Card__title {
+	color: var(--dark-main-color);
+}
+
+.Card__links * {
+	border-color: var(--dark-main-color);
+	color: var(--dark-text-color);
+}
