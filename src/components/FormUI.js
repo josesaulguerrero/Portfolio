@@ -51,10 +51,10 @@ export const FormUI = ({
                   required
                ></textarea>
             </label>
-            {sent === true && <p className='success' >the message was succesfully sent!</p>}
+            {sent === true && <p className='success' >the message was successfully sent!</p>}
             {error === true && <p className='error'>the message couldn't be sent, please try again later...</p>}
             <Button size='large' disabled={loading && true}>
-               {(initial || error || sent) ? 'send it!' : <Loader />}
+               {(sent || error || initial) ? 'Send it!' : <Loader />}
             </Button>
          </form>
       </>

@@ -9,9 +9,9 @@ export const useSend = () => {
       error: false
    });
    const Params = {
-      userID: 'user_YwtetwnsXeNTtKH3K4p2N',
-      templateID: 'template_43q0nkj',
-      serviceID: 'service_1v3cfzt',
+      userID: process.env.REACT_APP_MAILER_USER_ID,
+      templateID: process.env.REACT_APP_MAILER_TEMPLATE_ID,
+      serviceID: process.env.REACT_APP_MAILER_SERVICE_ID,
    };
 
    const sendData = (data) => {
@@ -26,7 +26,7 @@ export const useSend = () => {
       init(Params.userID);
       /*
       send is a method, from emailjs, which receives four parameters:
-         1 -> our vinculated service's ID
+         1 -> our service's ID
          2 -> then our template's ID
          3 -> the parameters that our template requires
          4 -> and finally, our user ID
