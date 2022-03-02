@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { init, send } from 'emailjs-com';
 
-export const useSend = () => {
+export const useMailer = () => {
    const [status, setStatus] = useState({
       initial: true,
       loading: false,

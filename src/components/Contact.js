@@ -3,10 +3,9 @@
 import '../assets/styles/Contact.css';
 //components
 import { SocialMedia } from './SocialMedia';
-import { FormHOC } from './FormHOC';
-import { FormUI } from './FormUI';
+import { Form } from './Form';
 
-export const Contact = ({ children }) => {
+export const Contact = () => {
    return (
       <section className="Contact" id='Contact'>
          <h2 className="Contact__title title--small">Let's build great things together!</h2>
@@ -15,7 +14,7 @@ export const Contact = ({ children }) => {
          <SocialMedia />
          <p className="Contact__description text--large will-disappear">Or</p>
          <p className='Contact__description text--large' >Send me an email!</p>
-         <FormHOC Component={FormUI} />
+         <Form />
       </section>
    );
 };
