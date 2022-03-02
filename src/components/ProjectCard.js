@@ -7,10 +7,10 @@ export const Card = ({ data }) => {
          <h1 className="Card__title">{data.name}</h1>
          <p className="Card__description text--medium" >{data.description}</p>
          <section className='Card__links'>
-            <a href={data.githubLink} className="text--medium githubLink">
+            <a href={data.githubLink} target="_blank" rel='noreferrer' className="text--medium githubLink">
                View Repo
             </a>
-            <a href={data.siteLink} className="text--medium siteLink">
+            <a href={data.siteLink} target="_blank" rel='noreferrer' className="text--medium siteLink">
                View app
             </a>
          </section>
