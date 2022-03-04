@@ -5,8 +5,8 @@
 	display: grid;
 	grid-template: auto 300px/ 1fr;
 	grid-template-areas:
-		'about-content'
-		'about-image';
+		"about-content"
+		"about-image";
 	justify-items: center;
 	align-items: center;
 	padding: 0 20px;
@@ -30,7 +30,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 25px 0;
+	margin: 50px 0 25px;
 }
 
 .picture__img {
@@ -55,7 +55,7 @@
 @media screen and (min-width: 800px) {
 	.About {
 		grid-template: 1fr / repeat(2, 1fr);
-		grid-template-areas: 'about-content about-image';
+		grid-template-areas: "about-content about-image";
 		padding: 0 90px;
 		margin-bottom: 70px;
 	}

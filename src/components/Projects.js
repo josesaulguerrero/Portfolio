@@ -15,7 +15,9 @@ export const Projects = () => {
          <p className="Projects__description text--large">
             These are some projects that I’ve built along my way to become a Full Stack developer.
          </p>
-         {renderCards(projects)}
+         <section className='Cards'>
+            {renderCards(projects)}
+         </section>
       </section>
    );
 };

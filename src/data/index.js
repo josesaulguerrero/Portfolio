@@ -17,7 +17,7 @@ export const projects = [
    {
       name: "Pokedex",
       description: "This is a really cute and cool Pokedex where you can check the most important attributes of your favorite Pokemon, including their evolution chain.",
-      imageUrl: "https://i.postimg.cc/C1QkQ857/image.png",
+      imageUrl: "https://i.postimg.cc/1XLvq2Zp/image.png",
       githubLink: "https://github.com/josesaulguerrero/pokedex-",
       siteLink: "https://special-pokedex.netlify.app"
    },
