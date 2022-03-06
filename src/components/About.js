@@ -18,7 +18,7 @@ export const About = () => {
             <img
                width='260'
                height='260'
-               src="https://i.pinimg.com/736x/61/67/68/61676870ede744ccfe2aabc947e697a2.jpg"
+               src="https://i.postimg.cc/kMWCFBJd/image.png"
                alt="Jose's appearance"
                className="picture__img" />
          </figure>
