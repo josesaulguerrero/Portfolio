@@ -1,0 +1,19 @@
+:host {
+  width: 100%;
+  /* height: calc(100vh - 70px); accounts for the 70px the navbar takes */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 20px;
+}
+
+.greeting {
+  margin: 10px 0;
+  font-weight: 600;
+}
+
+.introduction {
+  max-width: 650px;
+  margin-bottom: 25px;
+}
