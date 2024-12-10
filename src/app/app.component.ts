@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-// import { RouterOutlet } from '@angular/router';
 
+import { AboutMeComponent } from './about-me/about-me.component';
+// import { RouterOutlet } from '@angular/router';
 import { HeroComponent } from './hero/hero.component';
 
 @Component({
@@ -8,6 +9,7 @@ import { HeroComponent } from './hero/hero.component';
   imports: [
     // RouterOutlet,
     HeroComponent,
+    AboutMeComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

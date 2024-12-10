@@ -38,12 +38,14 @@ body {
 
 .title--small {
   font-size: 3.5rem;
-  color: var(--secondary-color);
+  color: var(--main-color);
+  margin: 10px 0;
 }
 
 .title--large {
   font-size: 5rem;
   color: var(--main-color);
+  margin: 10px 0;
 }
 
 .text--small {
@@ -59,4 +61,9 @@ body {
 .text--large {
   font-size: 2rem;
   color: var(--text);
+}
+
+.text--focus {
+  font-size: inherit;
+  color: var(--secondary-color);
 }
