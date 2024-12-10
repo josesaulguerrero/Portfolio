@@ -1,78 +1,59 @@
-<h1 align="center">Portfolio</h1>
-<div align="center">
-   This is a webpage where I talk about me and the projects I have built along my way to become a front-end developer.
-</div>
+# Portfolio
 
-<div align="center">
-  <h3>
-    <a href="https://github.com/josesaulguerrero/Portfolio">
-      repository
-    </a>
-    <span> | </span>
-    <a href="https://joseguerreroserrano.netlify.app/">
-      webpage
-    </a>
-    <span> | </span>
-    <a href="https://www.figma.com/file/mVqvbHigkCs4on7oclvTCE/Portfolio-redesign?node-id=0%3A1">
-      design
-    </a>
-  </h3>
-</div>
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
 
-<!-- TABLE OF CONTENTS -->
+## Development server
 
-## Table of Contents
-
--   [Overview](#overview)
-    -   [Built With](#built-with)
-    -   [Acknowledgements](#acknowledgements)
-    -   [Challenges](#challenges)
--   [How to use](#how-to-use)
--   [Contact](#contact)
-
-<!-- OVERVIEW -->
-
-## Overview
-
-![screenshot](https://i.postimg.cc/KvR9kvJ1/Screenshot-from-2021-10-24-09-23-24.png)
-
-### Built With
-
--   [React](https://reactjs.org/)
-
-### Acknowledgements
-
-It was a nice experience that taught me how to create reusable React hooks and components, furthermore, I learnt to use node packages (such as emailjs) to send emails without a back-end server. Creating a button to switch themes was something that I struggled with at the beginning, but after using React context and local storage it became a really easy task.
-In short, it was a challenge where I could use React and all the features it brings to make the interface-building process much easier.
-
-### Challenges
-
--   Creating a responsive design that looks amazing on every screen.
--   Integrating an email service with a React app.
--   Using High-Order compontens (HOCs) in order to create reusable React components.
--   Adding a button that allows the user to switch between the page themes.
--   Creating a custom hook to manage a Form's data and state.
-
-## How To Use
-
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)). From your command line type:
+To start a local development server, run:
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/josesaulguerrero/Portfolio.git
-
-# Install dependencies
-$ npm install
-or
-$ yarn install
-
-# Run the app
-$ npm start
-or
-$ yarn start
+ng serve
 ```
 
-## Contact
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
--   Website [joseguerrero](https://joseguerreroserrano.netlify.app/)
--   GitHub [@josesaulguerrero](https://github.com/josesaulguerrero/Portfolio)
+## Code scaffolding
+
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+
+```bash
+ng generate component component-name
+```
+
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+
+```bash
+ng generate --help
+```
+
+## Building
+
+To build the project run:
+
+```bash
+ng build
+```
+
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
+## Running unit tests
+
+To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
