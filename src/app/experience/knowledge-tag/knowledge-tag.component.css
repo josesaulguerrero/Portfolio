@@ -1,0 +1,17 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  background-image: var(--gradient);
+  border-radius: 5px;
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  background-color: var(--main-background);
+  border-radius: 5px;
+}

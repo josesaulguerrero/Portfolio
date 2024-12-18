@@ -1,0 +1,22 @@
+<article class="experience-item">
+  <section class="dates">
+    <span class="text--medium">
+      {{ experience.startDate | date : "LLL yyyy" }} - @if (!endDateIsString) {
+      {{ experience.endDate | date : "LLL yyyy" }}
+      } @else {
+      {{ experience.endDate }}
+      }
+    </span>
+  </section>
+  <section class="text">
+    <h3 class="text--focus text--large">
+      {{ experience.role }} - {{ experience.company }}
+    </h3>
+    <p class="text--large">{{ experience.description }}</p>
+  </section>
+  <section class="tags">
+    @for (tag of experience.tags; track tag) {
+    <app-knowledge-tag [tag]="tag"></app-knowledge-tag>
+    }
+  </section>
+</article>

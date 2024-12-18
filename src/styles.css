@@ -64,6 +64,5 @@ body {
 }
 
 .text--focus {
-  font-size: inherit;
   color: var(--secondary-color);
 }

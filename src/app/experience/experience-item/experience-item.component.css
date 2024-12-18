@@ -1,0 +1,40 @@
+:host {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+  max-height: fit-content;
+  margin-bottom: 100px;
+}
+
+.experience-item {
+  min-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-areas:
+    "dates text text"
+    "..... tags tags";
+  gap: 15px;
+}
+
+.text {
+  grid-area: text;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.dates {
+  grid-area: dates;
+}
+
+.tags {
+  grid-area: tags;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+}

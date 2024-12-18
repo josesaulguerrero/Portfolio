@@ -1,0 +1,8 @@
+<section class="experience" id="experience">
+  <h2 class="title title--small">Work Experience</h2>
+  <section class="content">
+    @for (experienceItem of workExperience; track experienceItem) {
+    <app-experience-item [experience]="experienceItem"></app-experience-item>
+    }
+  </section>
+</section>
