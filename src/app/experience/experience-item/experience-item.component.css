@@ -4,7 +4,6 @@
   justify-content: center;
   width: 100%;
   max-height: fit-content;
-  margin-bottom: 100px;
 }
 
 .experience-item {
@@ -37,4 +36,15 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+/*tablet media-query*/
+@media screen and (max-width: 768px) {
+  .experience-item {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas:
+      "dates"
+      "text"
+      "tags";
+  }
 }
